@@ -69,9 +69,8 @@
     .divider{height:1px;background:var(--line);margin:12px 0}
     @media (max-width:520px){
       .tabs{grid-template-columns:repeat(2,1fr)}
-    }
-/* TABLET */
-@media (min-width:600px){
+    }/* TABLET 7" */
+@media (min-width:600px) and (max-width:899px){
   .phone-wrap{
     padding:20px;
     display:flex;
@@ -87,6 +86,30 @@
 
   .tabs{
     grid-template-columns:repeat(4,1fr);
+  }
+}
+
+/* TABLET 10" */
+@media (min-width:900px){
+  .phone-wrap{
+    padding:24px;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+  }
+
+  .phone-shell{
+    width:100%;
+    max-width:1100px;
+    min-height:calc(100vh - 48px);
+  }
+
+  .tabs{
+    grid-template-columns:repeat(7,1fr);
+  }
+
+  .grid2{
+    grid-template-columns:repeat(3,1fr);
   }
 }
   </style>
