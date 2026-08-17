@@ -74,13 +74,19 @@
 @media (min-width:600px){
   .phone-wrap{
     padding:20px;
-    display:block;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
   }
 
   .phone-shell{
     width:100%;
-    max-width:none;
+    max-width:720px;
     min-height:calc(100vh - 40px);
+  }
+
+  .tabs{
+    grid-template-columns:repeat(4,1fr);
   }
 }
   </style>
